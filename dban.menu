@@ -1,0 +1,13 @@
+MENU BEGIN DBAN
+MENU LABEL ^Darik's Boot and Nuke (DBAN) 2.2.6
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/dban/dban.png
+
+MENU INCLUDE er/plugins/dban/dbanmain.menu
+
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

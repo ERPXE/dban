@@ -1,0 +1,96 @@
+LABEL DBAN
+MENU LABEL ^Darik's Boot and Nuke
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANAUTONUKE
+MENU LABEL ^DBAN Autonuke
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke"
+TEXT HELP
+                 Darik's Boot and Nuke.
+				 AUTONUKE Be really sure.
+ENDTEXT
+
+LABEL DBANDOD
+MENU LABEL ^DBAN DOD
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method dod522022m"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANDOD3PASS
+MENU LABEL ^DBAN DOD 3 Pass
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method dod3pass"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANDODSHORT
+MENU LABEL ^DBAN DOD Short
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method dodshort"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANGUTMANN
+MENU LABEL ^DBAN Gutmann
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method gutmann"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANOPS2
+MENU LABEL ^DBAN OPS2
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method ops2"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANPARANOID
+MENU LABEL ^DBAN Paranoid
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method prng --rounds 8 --verify all"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANPRNG
+MENU LABEL ^DBAN Prng
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method prng --rounds 8"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANQUICK
+MENU LABEL ^DBAN Quick
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method quick"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANZERO
+MENU LABEL ^DBAN Zero
+KERNEL er/plugins/dban/dban.bzi
+APPEND nuke="dwipe --autonuke --method zero"
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
+
+LABEL DBANSHELL
+MENU LABEL ^DBAN Shell
+KERNEL er/plugins/dban/dban.bzi
+APPEND init=/bin/sh
+TEXT HELP
+                 Darik's Boot and Nuke.
+ENDTEXT
